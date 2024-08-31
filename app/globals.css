@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background-color-light: #f0e7db;
+  --text-color-light: #000000;
+  --background-color-dark: #1e293b; /* Slate 800 */
+  --text-color-dark: #ffffff;
+}
+
+.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Apply transition to both background-color and color */
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Apply transition to both background-color and color */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
