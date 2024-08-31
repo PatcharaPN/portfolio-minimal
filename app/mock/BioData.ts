@@ -19,3 +19,46 @@ export const SocialData = [
     link: "https://github.com/PatcharaPN",
   },
 ];
+
+export const ProjectData = [
+  {
+    image1: {
+      image1: "/Project/Project1-1.png",
+      image2: "",
+      image3: "",
+      image: "",
+    },
+    name: "myChop",
+    stack: {
+      icon: {
+        icon1: "logos:react",
+        icon2: "logos:nestjs",
+        icon3: "logos:redux",
+        icon4: "vscode-icons:file-type-mongo",
+        icon5: "gg:framer",
+      },
+    },
+    description:
+      "Developing a Simple eCommerce Layout for CRUD Practice with NestJS and MongoDB",
+  },
+  {
+    image1: {
+      image1: "/Project/Project2.png",
+      image2: "",
+      image3: "",
+      image: "",
+    },
+    name: "myPOS",
+    stack: {
+      icon: {
+        icon1: "logos:react",
+        icon2: "logos:nodejs-icon",
+        icon3: "logos:redux",
+        icon4: "vscode-icons:file-type-mongo",
+        icon5: "gg:framer",
+      },
+    },
+    description:
+      "Developing a Point of Sale (POS) web management system using Node.js and MongoDB",
+  },
+];
