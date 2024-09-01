@@ -61,4 +61,43 @@ export const ProjectData = [
     description:
       "Developing a Point of Sale (POS) web management system using Node.js and MongoDB",
   },
+  {
+    image1: {
+      image1: "/Project/Project3.png",
+      image2: "",
+      image3: "",
+      image: "",
+    },
+    name: "Apple Clone Website",
+    stack: {
+      icon: {
+        icon1: "devicon:nextjs",
+        icon2: "",
+        icon3: "",
+        icon4: "",
+        icon5: "",
+      },
+    },
+    description: "Developing a Apple Website Layout Practice",
+  },
+  {
+    image1: {
+      image1: "/Project/Project4.png",
+      image2: "",
+      image3: "",
+      image: "",
+    },
+    name: "Phandal IOT Project",
+    stack: {
+      icon: {
+        icon1: "logos:flutter",
+        icon2: "vscode-icons:folder-type-bloc",
+        icon3: "logos:nestjs",
+        icon4: "devicon:mongodb",
+        icon5: "",
+      },
+    },
+    description:
+      "Design and Developing Frontend for config esp32 with Backend Team",
+  },
 ];

@@ -4,6 +4,7 @@ import { ProjectData } from "../mock/BioData";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
+import ObjViewer from "../components/3DComponent/Model";
 
 type Props = {};
 
@@ -37,7 +38,7 @@ const Project = (props: Props) => {
       animate={{ y: 20, opacity: 1 }}
       transition={{ duration: 1 }}
       ref={contentEntry}
-      className={`pt-16 select-none px-12 ${project ? "opacity-100 transition-opacity duration-300" : "opacity-0 transition-opacity duration-300"} `}
+      className={`py-16 select-none px-12 ${project ? "opacity-100 transition-opacity duration-300" : "opacity-0 transition-opacity duration-300"} `}
     >
       <div className="">
         <p className="underline text-[1.2rem] mb-6 font-bold">Projects</p>
@@ -45,7 +46,7 @@ const Project = (props: Props) => {
           {ProjectData.map((project, index) => (
             <div
               key={index}
-              className="flex justify-center flex-col items-center gap-2"
+              className="flex justify-center flex-col items-center mb-2 gap-2"
             >
               <Image
                 className="rounded-xl bg-white w-64 h-32 object-cover"

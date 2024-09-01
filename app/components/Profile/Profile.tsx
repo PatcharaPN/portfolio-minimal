@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import React, { useEffect, useRef, useState } from "react";
+import ObjViewer from "../3DComponent/Model";
 
 type Props = {};
 
@@ -47,6 +48,9 @@ const Profile = (props: Props) => {
       <div>
         <p className="text-[2rem] font-semibold">Patcharapol Pannaen</p>
         <p className="">Freelance ( Developer / UI Designer / Artist )</p>
+      </div>
+      <div className="">
+        <ObjViewer />
       </div>
     </div>
   );
