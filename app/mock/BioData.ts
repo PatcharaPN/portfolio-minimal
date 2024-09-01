@@ -82,7 +82,7 @@ export const ProjectData = [
   },
   {
     image1: {
-      image1: "/Project/Project4.png",
+      image1: "/Project/Project5.png",
       image2: "",
       image3: "",
       image: "",
@@ -100,4 +100,19 @@ export const ProjectData = [
     description:
       "Design and Developing Frontend for config esp32 with Backend Team",
   },
+];
+
+export const Skills = [
+  { icon: "logos:react", name: "React" },
+  { icon: "logos:nextjs-icon", name: "Nextjs" },
+  { icon: "logos:flutter", name: "Flutter" },
+  { icon: "logos:redux", name: "Redux" },
+  { icon: "devicon:tailwindcss", name: "TailwindCSS" },
+  { icon: "simple-icons:mui", color: "#00c7fc", name: "Matherial Ui" },
+  { icon: "logos:sass", name: "SASS/SCSS" },
+  { icon: "logos:nestjs", name: "Nestjs" },
+  { icon: "logos:nodejs-icon", name: "Nodejs" },
+  { icon: "devicon:mongodb", name: "MongoDB" },
+  { icon: "logos:postgresql", name: "Postgresql" },
+  { icon: "logos:graphql", name: "GraphQL" },
 ];

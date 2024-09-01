@@ -53,13 +53,15 @@ const Navbar = (props: Props) => {
           <Link href={"/Projects"}>
             <li>Projects</li>
           </Link>
-          <li>Skills</li>
         </ul>
       </div>
       <ul className="flex items-center gap-5 ">
-        <li>
-          <Icon width={45} icon="mdi:github" className={iconClass} />
-        </li>
+        <Link href={"https://github.com/PatcharaPN"}>
+          <li>
+            <Icon width={45} icon="mdi:github" className={iconClass} />
+          </li>
+        </Link>
+
         <li onClick={toggleTheme}>
           {theme === "dark" ? (
             <Icon width={35} icon="ph:sun-fill" className={iconClass} />

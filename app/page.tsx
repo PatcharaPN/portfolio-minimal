@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useTheme } from "./context/ThemeContext";
-import { BioDate, SocialData } from "./mock/BioData";
+import { BioDate, Skills, SocialData } from "./mock/BioData";
 import { parse } from "path";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useEffect, useRef, useState } from "react";
@@ -60,6 +60,14 @@ export default function Home() {
               projects that enhanced my skills in programming, Design, and
               system design.
             </article>
+            <p className="underline text-[1.2rem] my-5 font-bold">Skills</p>
+            <div className="grid grid-cols-6 gap-5">
+              {Skills.map((skill, index) => (
+                <div key={index}>
+                  <Icon width={30} icon={skill.icon} color={skill.color} />
+                </div>
+              ))}
+            </div>
             <p className="text-[1.2rem] underline font-bold my-5">Bio</p>
             {BioDate.map((data, index) => (
               <div key={index} className="grid grid-cols-[0.2fr_1fr] ">
