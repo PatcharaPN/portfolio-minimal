@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
 import ObjViewer from "../components/3DComponent/Model";
+import Link from "next/link";
 
 type Props = {};
 
@@ -48,13 +49,15 @@ const Project = (props: Props) => {
               key={index}
               className="flex justify-center flex-col items-center mb-2 gap-2"
             >
-              <Image
-                className="rounded-xl bg-white w-64 h-32 object-cover"
-                src={project.image1.image1}
-                width={240}
-                height={130}
-                alt={""}
-              />
+              <Link href={project.path}>
+                <Image
+                  className={`rounded-xl bg-white w-64 h-32 object-cover  ${project.style}`}
+                  src={project.image1.image1}
+                  width={240}
+                  height={130}
+                  alt={""}
+                />
+              </Link>
               <div className="felx flex-col text-start">
                 <p className="text-[1.2rem]">{project.name}</p>
                 <p className="text-center text-[0.8rem]">

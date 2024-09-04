@@ -1,3 +1,5 @@
+import path from "path";
+
 export const BioDate = [
   { year: "2002", data: "Born in nonthaburi, Thailand" },
   {
@@ -23,26 +25,6 @@ export const SocialData = [
 export const ProjectData = [
   {
     image1: {
-      image1: "/Project/Project1-1.png",
-      image2: "",
-      image3: "",
-      image: "",
-    },
-    name: "myChop",
-    stack: {
-      icon: {
-        icon1: "logos:react",
-        icon2: "logos:nestjs",
-        icon3: "logos:redux",
-        icon4: "vscode-icons:file-type-mongo",
-        icon5: "gg:framer",
-      },
-    },
-    description:
-      "Developing a Simple eCommerce Layout for CRUD Practice with NestJS and MongoDB",
-  },
-  {
-    image1: {
       image1: "/Project/Project2.png",
       image2: "",
       image3: "",
@@ -60,7 +42,32 @@ export const ProjectData = [
     },
     description:
       "Developing a Point of Sale (POS) web management system using Node.js and MongoDB",
+    path: "Projects/MyPOS",
+    style: "greyscale-0",
   },
+  {
+    image1: {
+      image1: "/Project/Project1-1.png",
+      image2: "",
+      image3: "",
+      image: "",
+    },
+    name: "myChop",
+    stack: {
+      icon: {
+        icon1: "logos:react",
+        icon2: "logos:nestjs",
+        icon3: "logos:redux",
+        icon4: "vscode-icons:file-type-mongo",
+        icon5: "gg:framer",
+      },
+    },
+    description:
+      "Developing a Simple eCommerce Layout for CRUD Practice with NestJS and MongoDB",
+    path: "",
+    style: "filter grayscale",
+  },
+
   {
     image1: {
       image1: "/Project/Project3.png",
@@ -79,6 +86,8 @@ export const ProjectData = [
       },
     },
     description: "Developing a Apple Website Layout Practice",
+    path: "",
+    style: "grayscale",
   },
   {
     image1: {
@@ -99,6 +108,8 @@ export const ProjectData = [
     },
     description:
       "Design and Developing Frontend for config esp32 with Backend Team",
+    path: "",
+    style: "grayscale",
   },
 ];
 

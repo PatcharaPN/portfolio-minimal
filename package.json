@@ -20,7 +20,7 @@
     "three": "^0.168.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "typescript": "^5.5.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
