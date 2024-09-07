@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "@/app/context/ThemeContext";
+import { ProjectContext } from "@/app/locales/en/common";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -49,7 +50,7 @@ const MyPOS = () => {
           <p className="bg-green-400/30 w-fit p-1 rounded-md text-[0.8rem]">
             STACK
           </p>
-          <p>React, NodeJS, MongoDB</p>
+          <p>{ProjectContext.stack}</p>
         </div>
         <div className="flex gap-5 items-center">
           <p className="bg-green-400/30 w-fit p-1 rounded-md text-[0.8rem]">
@@ -62,7 +63,7 @@ const MyPOS = () => {
             <p
               className={`hover:underline ${theme === "dark" ? "text-orange-300" : "text-orange-700"}`}
             >
-              https://my-pos-frontend.vercel.app/
+              {ProjectContext.website}
             </p>
             <Icon
               className={`${theme === "dark" ? "text-orange-300" : "text-orange-700"}`}
@@ -72,6 +73,7 @@ const MyPOS = () => {
         </div>
       </section>
       <section>
+        <p className="indent-5 text-current pb-5">{ProjectContext.project}</p>
         <div className="flex flex-col gap-4">
           <Image
             className="w-full rounded-md"
